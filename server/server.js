@@ -1,14 +1,14 @@
-import experss, { response } from "express";
+import express, { response } from "express";
 import axios from "axios";
 import cors from "cors";
 
 
-const app= experss();
+const app= express();
 const PORT= 3000;
 
 app.use(cors());
 
-const API_KEY= "58044dc0-8049-4584-ac77-0c5c522b9609";
+const API_KEY= "4581b803513643bd987a303e7049d864";
 const API_URL= "https://api.trafikinfo.trafikverket.se/v2/data.json";
 
 const jsonData=`
@@ -27,7 +27,7 @@ app.get("/fetch-data", (req, res) =>{
     axios
     .post(API_URL, jsonData,{
         headers:{
-            "Content-Type": "text/json",
+            "Content-Type": "text/xml",
         },
     })
 .then((response) =>{

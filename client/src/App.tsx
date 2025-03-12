@@ -47,9 +47,23 @@ const styles:{[key:string]: React.CSSProperties}={
     textAlign:"center"
   },
   button:{
+    padding: "10px 20px",
+    fontSize: "16px",
+    backgroundColor: "#007BFF",
+    color: "white",
+    border: "none",
+    borderRadius: "5px",
+    cursor: "pointer",
+    transition: "background-color 0.3s",
 
   },
   log:{
+    marginTop: "20px",
+    padding: "10px",
+    backgroundColor: "#f4f4f4",
+    borderRadius: "5px",
+    textAlign: "left",
+    whiteSpace: "pre-wrap",
     
   }
 }
